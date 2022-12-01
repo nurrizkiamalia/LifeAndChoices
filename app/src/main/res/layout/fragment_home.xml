@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.LifeAndChoices"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pilihan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/up_genre_home"
+                android:fontFamily="@font/antic"
+                android:padding="10dp"
+                android:text="Pilihan Cerita Saat ini"
+                android:textAlignment="center"
+                android:textColor="#686868"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/horizontalScrollView3"
+                app:layout_constraintStart_toStartOf="@+id/horizontalScrollView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="50dp"
+                android:background="#ffffff"
+                android:elevation="3dp"
+                android:scrollbarThumbHorizontal="@null"
+                android:scrollbarTrackVertical="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pilihan">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:id="@+id/judul4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/judul_cerita"
+                        android:fontFamily="@font/antic"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp"
+                        android:text="Kost-kostan Angker"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/judul3"
+                        app:layout_constraintEnd_toEndOf="@+id/cerita4"
+                        app:layout_constraintStart_toStartOf="@+id/cerita4"
+                        app:layout_constraintTop_toTopOf="@+id/judul3" />
+
+                    <ImageButton
+                        android:id="@+id/cerita4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/story_button"
+                        android:elevation="5dp"
+                        app:layout_constraintBottom_toTopOf="@+id/judul3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/cerita3"
+                        app:layout_constraintTop_toTopOf="@+id/cerita3" />
+
+                    <TextView
+                        android:id="@+id/judul3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/judul_cerita"
+                        android:fontFamily="@font/antic"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp"
+                        android:text="Valentine Day"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/judul2"
+                        app:layout_constraintEnd_toEndOf="@+id/cerita3"
+                        app:layout_constraintStart_toStartOf="@+id/cerita3"
+                        app:layout_constraintTop_toTopOf="@+id/judul2" />
+
+                    <TextView
+                        android:id="@+id/judul2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/judul_cerita"
+                        android:elevation="5dp"
+                        android:fontFamily="@font/antic"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp"
+                        android:text="Baju Lebaran Asep"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/judul1"
+                        app:layout_constraintEnd_toEndOf="@+id/ceritaromance1"
+                        app:layout_constraintStart_toStartOf="@+id/ceritaromance1"
+                        app:layout_constraintTop_toBottomOf="@+id/cerita1" />
+
+                    <ImageButton
+                        android:id="@+id/ceritaromance1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/story_button"
+                        android:elevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/cerita1"
+                        app:layout_constraintStart_toEndOf="@+id/cerita1"
+                        app:layout_constraintTop_toTopOf="@+id/cerita1" />
+
+                    <ImageButton
+                        android:id="@+id/cerita1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/story_button"
+                        android:elevation="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/judul1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/judul_cerita"
+                        android:elevation="5dp"
+                        android:fontFamily="@font/antic"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp"
+                        android:text="Malih dan Dompet"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/cerita1"
+                        app:layout_constraintStart_toStartOf="@+id/cerita1"
+                        app:layout_constraintTop_toBottomOf="@+id/cerita1" />
+
+                    <ImageButton
+                        android:id="@+id/cerita3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/story_button"
+                        android:elevation="5dp"
+                        app:layout_constraintBottom_toTopOf="@+id/judul2"
+                        app:layout_constraintStart_toEndOf="@+id/ceritaromance1"
+                        app:layout_constraintTop_toTopOf="@+id/ceritaromance1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>
